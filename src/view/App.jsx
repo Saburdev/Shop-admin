@@ -1,7 +1,7 @@
 import { Sidebar } from "./components/Sidebar";
-import { useId } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AddProoduct } from "./pages/AddProoduct";
+import { ViewList } from "./pages/ViewList";
 function App() {
   return (
     <div className="flex">
@@ -11,6 +11,7 @@ function App() {
       <div className="p-10 w-full">
         <Routes>
           <Route index element={<AddProoduct/>}/>
+          <Route path="/viewlist" element={<ViewList/>}/>
         </Routes>
       </div>
     </div>
